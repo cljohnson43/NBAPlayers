@@ -55,6 +55,10 @@ class PlayersViewModel(application: Application) : AndroidViewModel(application)
 
         list.forEach{it -> playerRepo.insertPlayer(it)}
 
+        val players = playerRepo.getAllPlayers()
+
+        playerRepo.deletePlayer(players[0])
+
         return playerRepo.getAllPlayers()
     }
 }

@@ -130,4 +130,12 @@ class PlayersDb(context: Context) {
         }
         return playerList
     }
+
+    fun deletePlayer(player: Player): Int {
+        val selection = "${BaseColumns._ID} == ?"
+        val selectionArgs = arrayOf("${player.id}")
+
+        val db = dbHelper.writableDatabase
+        return db.delete(PlayersContract.PlayersEntry.TABLE_NAME, selection, selectionArgs)
+    }
 }

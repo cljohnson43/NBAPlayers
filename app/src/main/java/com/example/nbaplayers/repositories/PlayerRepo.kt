@@ -12,5 +12,5 @@ class PlayerRepo(context: Context) {
 
     fun getAllPlayers(): List<Player> = db.getAllPlayers()
     fun insertPlayer(player: Player): Long = db.insertPlayer(player)
-
+    fun deletePlayer(player: Player): Int = db.deletePlayer(player)
 }
