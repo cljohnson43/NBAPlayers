@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.PlayerEditActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="@dimen/outer_margin"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_end="@dimen/outer_margin"
+        android:orientation="vertical"
+        />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing"
+        android:layout_marginTop="@dimen/double_spacing"
+        android:layout_marginBottom="@dimen/spacing"
+        android:textSize="@dimen/font"
+        tools:text="FIRST NAME"
+        android:hint="First Name"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing"
+        android:layout_marginTop="@dimen/double_spacing"
+        android:layout_marginBottom="@dimen/spacing"
+        android:textSize="@dimen/font"
+        tools:text="LAST NAME"
+        android:hint="Last Name"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/et_first_name"
+        />
+
+    <EditText
+        android:id="@+id/et_hometown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing"
+        android:layout_marginTop="@dimen/double_spacing"
+        android:layout_marginBottom="@dimen/spacing"
+        android:textSize="@dimen/font"
+        tools:text="HOMETOWN"
+        android:hint="Hometown"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/et_last_name"
+        />
+
+    <EditText
+        android:id="@+id/et_born"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing"
+        android:layout_marginTop="@dimen/double_spacing"
+        android:layout_marginBottom="@dimen/spacing"
+        android:textSize="@dimen/font"
+        tools:text="BORN"
+        android:hint="Date of Birth"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/et_hometown"
+        />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing"
+        android:layout_marginTop="@dimen/double_spacing"
+        android:layout_marginBottom="@dimen/spacing"
+        android:textSize="@dimen/font"
+        tools:text="URL"
+        android:hint="Player Page"
+        app:layout_constraintStart_toEndOf="@id/gl_left"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/et_born"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NBAPlayers</string>
+    <string name="action_save">Save</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="player_edit_title">Edit Player</string>
+    <string name="player_create_title">Add Player</string>
 </resources>
