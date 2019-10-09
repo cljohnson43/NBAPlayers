@@ -25,7 +25,9 @@ class PlayerEditActivity : AppCompatActivity() {
     fun setupView() {
         val action = intent?.action
 
-        actionBar?.setTitle(R.string.player_create_title)
+        actionBar?.apply {
+            setTitle(R.string.player_create_title)
+        }
 
         when (action) {
             ACTION_EDIT_PLAYER -> {
@@ -41,8 +43,6 @@ class PlayerEditActivity : AppCompatActivity() {
 
             }
         }
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
