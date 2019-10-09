@@ -5,5 +5,6 @@ data class Player(
     val lastName: String,
     val born: String,
     val hometown: String,
-    val url: String
+    val url: String,
+    var id: Long = -1
 ) {}

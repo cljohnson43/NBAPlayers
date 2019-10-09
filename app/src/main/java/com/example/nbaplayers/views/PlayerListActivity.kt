@@ -17,7 +17,7 @@ class PlayerListActivity : AppCompatActivity() {
     val playersViewModel: PlayersViewModel by lazy {
         ViewModelProvider(
             this,
-            ViewModelProvider.NewInstanceFactory()
+            ViewModelProvider.AndroidViewModelFactory(application)
         ).get(PlayersViewModel::class.java)
     }
 
